@@ -98,13 +98,13 @@ hr {
 /* ======= 본문 스타일 ======= */
 .description {
     font-family: 'Pixelify Sans', sans-serif; /* 🔥 선택한 폰트 적용 */
-    font-size: clamp(28px, 2vw, 38px); /* 🔥 화면 크기에 따라 적절한 크기로 유지 */
+    font-size: clamp(25px, 2vw, 35px); /* 🔥 화면 크기에 따라 적절한 크기로 유지 */
     font-weight: 400; /* 🔥 기본 글씨 두께 */
     line-height: 1.8;
     color: #ddd;
     text-align: left;
     max-width: 1000px;
-    margin-bottom: 15px; /* 🔥 문단 간격 조정 */
+    margin-left: 10vw; /* 🔥 왼쪽으로 이동 */
     text-indent: 0;
     white-space: nowrap;
 }
@@ -133,6 +133,6 @@ hr {
     display: flex; /* 🔥 한 줄 정렬 */
     align-items: center;
     max-width: 80vw; /* 🔥 한 줄 길이 제한 */
-    margin-left: 5vw; /* 🔥 왼쪽으로 이동 */
+    margin-left: 10vw; /* 🔥 왼쪽으로 이동 */
     justify-content: center; /* 🔥 중앙 정렬 */
 }
