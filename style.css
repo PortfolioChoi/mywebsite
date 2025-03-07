@@ -11,6 +11,7 @@ body {
 /* ======= 제목 스타일 (꽉 차게) ======= */
 h1 {
     font-size: 18vh; /* 🔥 화면 높이의 18% 크기로 조정 */
+    font-family: 'Space Grotesk', sans-serif; /* 🔥 새로운 폰트 적용 */
     font-weight: bold;
     text-transform: uppercase;
     text-align: left;
