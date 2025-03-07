@@ -3,7 +3,6 @@ body {
     background-color: #000;
     color: #fff;
     font-family: 'Arial', sans-serif;
-    text-align: center;
     margin: 0;
     padding: 0;
 }
@@ -32,13 +31,15 @@ nav a:hover {
 
 /* ====== 메인 컨텐츠 ====== */
 .container {
-    position: relative; /* 🔥 내부 요소의 위치 기준 */
+    position: relative;
     display: block;
+    max-width: 1200px; /* 🔥 최대 너비 설정 */
     width: 100%;
-    margin: 0;
+    margin-left: 0; /* 🔥 강제적으로 왼쪽 정렬 */
     padding: 0;
     text-align: left;
 }
+
 h1 {
     font-size: 25vh; 
     font-weight: bold;
@@ -99,11 +100,10 @@ hr {
 }
 /* ======= 본문 스타일 ======= */
 .description {
-    position: relative; /* 🔥 absolute 대신 relative 사용 */
-    left: 0;
-    width: 100%;
-    max-width: 100%;
-    margin-left: 0; /* 🔥 완전히 왼쪽으로 정렬 */
+    position: relative;
+    width: auto;
+    max-width: 800px; /* 🔥 본문의 최대 너비 설정 */
+    margin-left: 0; /* 🔥 왼쪽으로 이동 */
     padding-left: 0;
     text-align: left;
 }
