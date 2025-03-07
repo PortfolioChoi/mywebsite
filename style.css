@@ -10,18 +10,18 @@ body {
 
 /* ======= 제목 스타일 (꽉 차게) ======= */
 h1 {
-    font-size: 22vh; /* 🔥 화면 높이의 18% 크기로 조정 */
-    font-family: 'Space Grotesk', sans-serif; /* 🔥 새로운 폰트 적용 */
+    font-size: 18vh; /* 🔥 화면 높이의 18% 크기로 조정 */
     font-weight: bold;
+    font-family: 'Pixelify Sans', sans-serif;
     text-transform: uppercase;
     text-align: left;
+    width: 100%;
     margin: 0;
-    padding: 10vh 5vw; /* 🔥 제목이 화면 안에서 균형 잡히도록 조정 */
+    padding: 20vh 5vw 10vh; /* 🔥 상단 메뉴와 겹치지 않도록 조정 */
     line-height: 1;
     letter-spacing: -3px;
-    width: 120%;
-    white-space: normal; /* 🔥 자동 줄바꿈 허용 */
-    word-break: break-word; /* 🔥 너무 긴 단어도 줄바꿈 */
+    white-space: normal;
+    word-break: break-word;
 }
 
 /* ======= 본문 스타일 (일자로 유지) ======= */
