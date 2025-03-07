@@ -39,6 +39,7 @@ nav a:hover {
 
 h1 {
     font-size: 150px;  /* 🔥 다시 크게 조정 */
+    font-family: 'Space Grotesk', sans-serif; /* 🔥 선택한 폰트 적용 */
     font-weight: bold;
     text-transform: uppercase;
     text-align: left;
