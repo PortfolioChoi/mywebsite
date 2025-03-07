@@ -104,6 +104,7 @@ hr {
     color: #ddd;
     text-align: left;
     max-width: 1000px;
+    margin-bottom: 18px; /* 🔥 문단 간격 조정 */
 }
 /* ======= 텍스트 블록 스타일 ======= */
 .text-grid {
