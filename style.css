@@ -55,10 +55,10 @@ h1 {
 
 /* ======= 개별 블록 스타일 ======= */
 .text-block {
-    font-size: 22px;
+    font-size: 18px;
     line-height: 1.8;
     color: #ddd;
-    background: rgba(255, 255, 255, 0.1); /* 🔥 배경 강조 */
+    background: rgba(255, 255, 255, 0); /* 🔥 배경 강조 */
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* 🔥 블록 그림자 효과 */
