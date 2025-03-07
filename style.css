@@ -32,20 +32,20 @@ nav a:hover {
 
 /* ====== 메인 컨텐츠 ====== */
 .container {
+    position: relative; /* 🔥 부모 요소를 상대적 위치로 설정 */
     display: block;
-    width: 100%; /* 🔥 부모 요소 전체 너비 사용 */
-    margin: 0; /* 🔥 중앙 정렬 제거 */
-    padding: 0; /* 🔥 내부 여백 제거 */
-    text-align: left; /* 🔥 모든 내부 요소 왼쪽 정렬 */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: left;
 }
-
 h1 {
     font-size: 25vh; /* 🔥 화면 높이의 18% 크기로 조정 */
     font-weight: bold;
     text-transform: uppercase;
     text-align: left;
     margin: 0;
-    padding: 10vh 5vw; /* 🔥 제목이 화면 안에서 균형 잡히도록 조정 */
+    padding: 10vh 0; /* 🔥 좌우 패딩 제거해서 본문이 왼쪽으로 갈 수 있도록 설정 */
     line-height: 1;
     letter-spacing: -3px;
     width: 100%;
@@ -100,12 +100,14 @@ hr {
 /* ======= 본문 스타일 ======= */
 .description {
     position: absolute;
-    left: 0; /* 🔥 화면 맨 왼쪽으로 이동 */
+    left: 0; /* 🔥 확실하게 왼쪽 정렬 */
     top: 50vh; /* 🔥 화면 중앙으로 정렬 */
     transform: translateY(-50%);
-    width: auto;
+    width: 100%; /* 🔥 너비를 부모 요소(.container) 전체로 확장 */
+    max-width: none; /* 🔥 최대 너비 제한 해제 */
+    margin: 0;
+    padding: 0;
 }
-
 /* ======= 텍스트 블록 스타일 ======= */
 .text-grid {
     display: grid;
