@@ -108,7 +108,7 @@ h1 {
 .text-block {
     font-size: 18px;
     line-height: 1.8;
-    color: #00FF00;
+    font-color: #00FF00;
     background: rgba(255, 255, 255, 0);
     padding: 30px;
     border-radius: 15px;
@@ -122,8 +122,8 @@ button {
     padding: 12px 25px;
     margin-top: 30px;
     background: transparent;
-    color: #ff0055;
-    border: 2px solid #ff0055;
+    color: #00FF00;
+    border: 2px solid #00FF00;
     border-radius: 30px;
     text-shadow: 0 0 5px #00FF00, 0 0 10px #00FF00, 0 0 15px #008000;
     font-weight: bold;
@@ -160,12 +160,12 @@ body::after {
         text-shadow: 0 0 5px #00FF00, 0 0 10px #00FF00, 0 0 15px #008000;
     }
     to {
-        text-shadow: 0 0 10px #00FF00, 0 0 20px #00FF00, 0 0 30px #008000;
+        text-shadow: 0 0 10px #00FF00, 0 0 25px #00FF00, 0 0 20px #008000;
     }
 }
 /* ======= ABOUT 페이지 스타일 ======= */
 h1 {
-    font-size: 14vh; /* 🔥 크기 조정 */
+    font-size: 10vh; /* 🔥 크기 조정 */
     font-family: 'Pixelify Sans', sans-serif;
     font-weight: bold;
     color: #00FF00;
@@ -181,7 +181,7 @@ h1 {
     background: rgba(0, 255, 0, 0.1);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px #00FF00;
+    box-shadow: 0 0 0px #00FF00;
 }
 
 button {
