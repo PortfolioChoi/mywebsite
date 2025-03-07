@@ -42,9 +42,9 @@ h1 {
     font-weight: bold;
     text-transform: uppercase;
     text-align: left;
-    margin: 0 5%; /* 🔥 위쪽 여백 없애기 */
-    padding-top: 50px; /* 🔥 상단 여백 조절 */
-    letter-spacing: -2px; /* 글자 간격 조정 */
+    margin: 20px 5% 0 5%; /* 🔥 위쪽 여백을 줄이고 아래 여백 제거 */
+    padding: 0; /* 🔥 추가적인 패딩 제거 */
+    letter-spacing: -2px;
 }
 
 p {
