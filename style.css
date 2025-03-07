@@ -162,7 +162,7 @@ h1 {
 
 /* 🔥 ABOUT 제목 크기 조정 */
 .about-title {
-    font-size: 10vh; /* 🔥 기존보다 작은 크기 */
+    font-size: 8vh; /* 🔥 기존보다 더 작게 */
     font-family: 'Pixelify Sans', sans-serif;
     font-weight: bold;
     color: #00FF00;
@@ -175,7 +175,7 @@ h1 {
 
 /* 🔥 부제목 스타일 */
 .about-subtitle {
-    font-size: 6vh;
+    font-size: 5vh; /* 🔥 더 작게 */
     font-family: 'Pixelify Sans', sans-serif;
     font-weight: bold;
     color: #00FF00;
@@ -185,15 +185,15 @@ h1 {
     text-shadow: 0 0 5px #00FF00, 0 0 10px #00FF00, 0 0 15px #008000;
 }
 
-/* 🔥 본문 스타일 (작게 조정) */
+/* 🔥 본문 스타일 (더 작게 조정) */
 .about-description {
-    font-size: clamp(20px, 1.8vw, 24px); /* 🔥 크기 줄이기 */
+    font-size: clamp(16px, 1.5vw, 20px); /* 🔥 최소 16px, 최대 20px 유지 */
     font-weight: 400;
     line-height: 1.8;
     color: #00FF00;
     text-align: left;
-    max-width: 1000px;
-    text-indent: 30px; /* 🔥 들여쓰기 추가 */
+    max-width: 900px; /* 🔥 너무 넓지 않게 조정 */
+    text-indent: 25px; /* 🔥 들여쓰기 조정 */
     margin-bottom: 3vh;
     text-shadow: 0 0 5px #00FF00, 0 0 10px #00FF00, 0 0 15px #008000;
 }
@@ -201,7 +201,7 @@ h1 {
 /* 🔥 한글 번역 부분 스타일 */
 .translation {
     color: #66ff66; /* 🔥 연한 초록색 */
-    font-size: clamp(18px, 1.6vw, 22px); /* 🔥 살짝 크기 감소 */
+    font-size: clamp(14px, 1.4vw, 18px); /* 🔥 최소 14px, 최대 18px 유지 */
     font-style: italic;
     margin-bottom: 5vh;
 }
