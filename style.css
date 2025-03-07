@@ -105,7 +105,7 @@ hr {
 .text-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 🔥 자동 정렬 */
-    gap: 30px; /* 🔥 블록 사이 간격 */
+    gap: 25px; /* 🔥 블록 사이 간격 */
     width: 90%;
     max-width: 1200px;
     margin: 50px auto;
