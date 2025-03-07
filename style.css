@@ -56,6 +56,8 @@ h1 {
     letter-spacing: -3px;
     white-space: nowrap;
     overflow: hidden;
+    text-shadow: 0 0 5px #00FF00, 0 0 10px #00FF00, 0 0 15px #008000;
+    animation: glow 1.5s infinite alternate;
 }
 
 /* ======= 본문 스타일 (타이핑 애니메이션 적용) ======= */
