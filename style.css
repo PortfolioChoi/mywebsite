@@ -96,17 +96,18 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.9); /* 🔥 반투명 배경 */
-    padding: 15px 30px;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px 30px; /* 🔥 상단 바 높이 조정 */
     display: flex;
-    justify-content: flex-end; /* 🔥 오른쪽 정렬 */
+    justify-content: flex-end;
     align-items: center;
     z-index: 1000;
+    height: 60px; /* 🔥 높이 고정 (잘리지 않도록 설정) */
 }
 
 .menu {
     display: flex;
-    gap: 20px; /* 🔥 메뉴 간격 */
+    gap: 20px;
 }
 
 nav a {
@@ -115,6 +116,7 @@ nav a {
     font-size: 16px;
     font-weight: bold;
     transition: 0.3s;
+    white-space: nowrap; /* 🔥 글자가 줄바꿈되지 않도록 설정 */
 }
 
 nav a:hover {
