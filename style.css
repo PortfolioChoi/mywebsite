@@ -97,12 +97,13 @@ hr {
 }
 /* ======= 본문 스타일 ======= */
 .description {
-    font-size: 24px;
+    font-family: 'Pixelify Sans', sans-serif; /* 🔥 선택한 폰트 적용 */
+    font-size: clamp(20px, 2vw, 28px); /* 🔥 화면 크기에 따라 적절한 크기로 유지 */
+    font-weight: 400; /* 🔥 기본 글씨 두께 */
     line-height: 1.8;
     color: #ddd;
     text-align: left;
-    margin-top: 10vh; /* 🔥 제목과 본문 사이 간격 조정 */
-    max-width: 800px;
+    max-width: 1000px;
 }
 /* ======= 텍스트 블록 스타일 ======= */
 .text-grid {
@@ -118,7 +119,7 @@ hr {
     font-size: 22px;
     line-height: 1.8;
     color: #ddd;
-    background: rgba(255, 255, 255, 0.05); /* 🔥 연한 블록 배경 */
+    background: rgba(255, 255, 255, 0.00); /* 🔥 연한 블록 배경 */
     padding: 20px;
     border-radius: 10px;
 }
