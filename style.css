@@ -1,140 +1,92 @@
-/* ====== 기본 스타일 (블랙 테마) ====== */
+/* ======= 기본 스타일 (전체 테마) ======= */
 body {
     background-color: #000;
     color: #fff;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Pixelify Sans', sans-serif;
+    text-align: left;
     margin: 0;
     padding: 0;
 }
 
-/* ====== 네비게이션 바 ====== */
-nav {
-    background-color: #111;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 15px;
-    font-size: 16px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-nav a:hover {
-    color: #ff0055; /* 네온 핑크 효과 */
-}
-
-/* ====== 메인 컨텐츠 ====== */
-.container {
-    position: relative;
-    display: block;
-    max-width: 1200px; /* 🔥 최대 너비 설정 */
-    width: 100%;
-    margin-left: 0; /* 🔥 강제적으로 왼쪽 정렬 */
-    padding: 0;
-    text-align: left;
-}
-
+/* ======= 제목 스타일 (꽉 차게) ======= */
 h1 {
-    font-size: 25vh; 
+    font-size: 18vh; /* 🔥 화면 높이의 18% 크기로 조정 */
     font-weight: bold;
     text-transform: uppercase;
     text-align: left;
     margin: 0;
-    padding: 10vh 0; /* 🔥 좌우 패딩 제거해서 본문이 왼쪽으로 갈 수 있도록 수정 */
+    padding: 10vh 5vw; /* 🔥 제목이 화면 안에서 균형 잡히도록 조정 */
     line-height: 1;
     letter-spacing: -3px;
     width: 100%;
-    white-space: normal;
-    word-break: break-word;
+    white-space: normal; /* 🔥 자동 줄바꿈 허용 */
+    word-break: break-word; /* 🔥 너무 긴 단어도 줄바꿈 */
 }
 
-p {
-    font-size: 20px;
-    line-height: 1.6;
+/* ======= 본문 스타일 (일자로 유지) ======= */
+.description {
+    font-size: clamp(22px, 2vw, 26px); /* 🔥 최소 22px, 최대 26px 유지 */
+    font-weight: 400;
+    line-height: 1.8;
+    color: #ddd;
     text-align: left;
-    margin: 20px 10%;
-    max-width: 800px; /* 🔥 폭 제한 (가독성 높이기) */
+    max-width: 1000px;
+    text-indent: 0; /* 🔥 들여쓰기 없애기 */
+    display: block; /* 🔥 블록 요소로 설정 */
+    white-space: normal; /* 🔥 자동 줄바꿈 허용 */
+    word-break: break-word; /* 🔥 단어가 길면 줄바꿈 */
+    margin: 5vh auto; /* 🔥 제목과의 간격 */
 }
 
-/* ====== 버튼 스타일 (네온 효과) ====== */
-.btn {
-    display: inline-block;
+/* ======= 본문 강조 스타일 (특정 문구 두껍게) ======= */
+.description strong {
+    font-weight: 700;
+}
+
+/* ======= 본문 블록 스타일 (그리드 배치) ======= */
+.text-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* 🔥 블록 크기 자동 조정 */
+    gap: 40px; /* 🔥 블록 사이 간격 */
+    width: 80%;
+    max-width: 1400px;
+    margin: 10vh auto; /* 🔥 제목과의 간격 */
+}
+
+/* ======= 개별 블록 스타일 ======= */
+.text-block {
+    font-size: 22px;
+    line-height: 1.8;
+    color: #ddd;
+    background: rgba(255, 255, 255, 0.1); /* 🔥 배경 강조 */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* 🔥 블록 그림자 효과 */
+}
+
+/* ======= 버튼 스타일 ======= */
+button {
+    font-size: 18px;
+    padding: 12px 25px;
+    margin-top: 30px;
     background: transparent;
     color: #ff0055;
-    padding: 12px 25px;
-    margin-top: 20px;
     border: 2px solid #ff0055;
     border-radius: 30px;
-    font-size: 18px;
     text-decoration: none;
     font-weight: bold;
     transition: 0.3s;
 }
 
-.btn:hover {
+button:hover {
     background: #ff0055;
     color: #000;
 }
 
-/* ====== 이미지 스타일 ====== */
-img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 30px;
-    border-radius: 10px;
-}
-
-/* ====== 구분선 ====== */
-hr {
-    border: 0;
-    height: 1px;
-    background: rgba(255, 255, 255, 0.2);
-    width: 80%;
-    margin: 50px auto;
-}
-/* ======= 본문 스타일 ======= */
-.description {
-    position: relative;
-    width: auto;
-    max-width: 800px; /* 🔥 본문의 최대 너비 설정 */
-    margin-left: 0; /* 🔥 강제로 왼쪽 정렬 */
-    padding-left: 0;
-    text-align: left;
-}
-
-/* ======= 텍스트 블록 스타일 ======= */
-.text-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 50px;
-    justify-content: flex-start; /* 🔥 왼쪽 정렬 */
-    text-align: left;
-    width: 90%;
-    max-width: 1200px;
-    margin-left: 5vw; /* 🔥 왼쪽으로 이동 */
-}
-
-
-.text-block {
-    font-size: 22px;
-    line-height: 1.8;
-    color: #ddd;
-    background: rgba(255, 255, 255, 0.00); /* 🔥 연한 블록 배경 */
-    padding: 20px;
-    border-radius: 10px;
-}
-.single-line {
-    overflow: hidden;
-    white-space: nowrap;
-    display: block; /* 🔥 flex 제거하고 block 사용 */
-    text-align: left;
-    width: 100%;
-    margin-left: 5vw; /* 🔥 왼쪽 정렬 */
+/* ======= 줄바꿈 간격 조정 ======= */
+.description br {
+    display: block;
+    content: "";
+    margin-bottom: 15px; /* 🔥 줄바꿈 간격 */
 }
 
