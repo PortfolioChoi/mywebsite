@@ -40,17 +40,17 @@ nav a:hover {
     text-align: left;
 }
 h1 {
-    font-size: 25vh; /* 🔥 화면 높이의 18% 크기로 조정 */
+    font-size: 25vh; 
     font-weight: bold;
     text-transform: uppercase;
     text-align: left;
     margin: 0;
-    padding: 10vh 0; /* 🔥 좌우 패딩 제거해서 본문이 왼쪽으로 갈 수 있도록 설정 */
+    padding: 10vh 0; /* 🔥 좌우 패딩 제거해서 본문이 왼쪽으로 갈 수 있도록 수정 */
     line-height: 1;
     letter-spacing: -3px;
     width: 100%;
-    white-space: normal; /* 🔥 자동 줄바꿈 허용 */
-    word-break: break-word; /* 🔥 너무 긴 단어도 줄바꿈 */
+    white-space: normal;
+    word-break: break-word;
 }
 
 p {
