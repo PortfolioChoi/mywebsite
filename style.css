@@ -1,15 +1,47 @@
-/* ======= 기본 스타일 (전체 테마) ======= */
+/* ======= 기본 스타일 (블랙 테마) ======= */
 body {
-    background-color: #000; /* 🔥 배경을 검은색으로 설정 */
-    color: #00FF00; /* 🔥 텍스트를 초록색으로 변경 */
-    font-family: 'Courier New', Courier, monospace; /* 🔥 코딩 스타일 폰트 */
+    background-color: #000;
+    color: #00FF00;
+    font-family: 'Courier New', Courier, monospace;
     text-align: left;
     margin: 0;
     padding: 0;
-    text-shadow: 0px 0px 4px #00ff00, 0px 0px 8px #00ff00;
 }
 
-/* ======= 제목 스타일 (꽉 차게) ======= */
+/* ======= 상단 네비게이션 바 ======= */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 1000;
+    height: 60px;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+nav a:hover {
+    color: #ff0055;
+}
+
+/* ======= 제목 스타일 (타이핑 효과 추가 가능) ======= */
 h1 {
     font-size: 18vh;
     font-family: 'Pixelify Sans', sans-serif;
@@ -22,40 +54,50 @@ h1 {
     padding: 20vh 5vw 10vh;
     line-height: 1;
     letter-spacing: -3px;
-    white-space: normal;
-    word-break: break-word;
-    animation: blink 1.5s infinite alternate;
-    text-shadow: 0px 0px 5px #00ff00, 0px 0px 10px #00ff00;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
-/* ======= 본문 스타일 (일자로 유지) ======= */
+/* ======= 본문 스타일 (타이핑 애니메이션 적용) ======= */
 .description {
-    font-size: clamp(22px, 2vw, 26px); /* 🔥 최소 22px, 최대 26px 유지 */
+    font-size: clamp(22px, 2vw, 26px);
     font-weight: 400;
     line-height: 1.8;
     color: #ddd;
     text-align: left;
     max-width: 1000px;
-    text-indent: 0; /* 🔥 들여쓰기 없애기 */
-    display: block; /* 🔥 블록 요소로 설정 */
-    white-space: normal; /* 🔥 자동 줄바꿈 허용 */
-    word-break: break-word; /* 🔥 단어가 길면 줄바꿈 */
-    margin: 5vh auto; /* 🔥 제목과의 간격 */
+    text-indent: 0;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
-/* ======= 본문 강조 스타일 (특정 문구 두껍게) ======= */
-.description strong {
-    font-weight: 700;
+/* ====== 타이핑 애니메이션 효과 ====== */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+.typing-container {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid #00FF00;
+    animation: typing 3s steps(40, end) forwards, blink 0.8s infinite;
 }
 
 /* ======= 본문 블록 스타일 (그리드 배치) ======= */
 .text-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* 🔥 블록 크기 자동 조정 */
-    gap: 40px; /* 🔥 블록 사이 간격 */
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px;
     width: 80%;
     max-width: 1400px;
-    margin: 10vh auto; /* 🔥 제목과의 간격 */
+    margin: 10vh auto;
 }
 
 /* ======= 개별 블록 스타일 ======= */
@@ -63,10 +105,10 @@ h1 {
     font-size: 18px;
     line-height: 1.8;
     color: #ddd;
-    background: rgba(255, 255, 255, 0); /* 🔥 배경 강조 */
+    background: rgba(255, 255, 255, 0);
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* 🔥 블록 그림자 효과 */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 /* ======= 버튼 스타일 ======= */
@@ -88,50 +130,7 @@ button:hover {
     color: #000;
 }
 
-/* ======= 줄바꿈 간격 조정 ======= */
-.description br {
-    display: block;
-    content: "";
-    margin-bottom: 15px; /* 🔥 줄바꿈 간격 */
-}
-/* ====== 상단 네비게이션 바 스타일 ====== */
-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    padding: 20px 30px; /* 🔥 상단 바 높이 조정 */
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    z-index: 1000;
-    height: 60px; /* 🔥 높이 고정 (잘리지 않도록 설정) */
-}
-
-.menu {
-    display: flex;
-    gap: 20px;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-    transition: 0.3s;
-    white-space: nowrap; /* 🔥 글자가 줄바꿈되지 않도록 설정 */
-}
-
-nav a:hover {
-    color: #ff0055; /* 🔥 네온 핑크 효과 */
-}
-@keyframes blink {
-    0% { opacity: 1; }
-    50% { opacity: 0.7; }
-    100% { opacity: 1; }
-}
-/* ====== CRT 모니터 효과 ====== */
+/* ======= CRT 모니터 효과 (선택 사항) ======= */
 body::after {
     content: "";
     position: fixed;
@@ -148,34 +147,4 @@ body::after {
 @keyframes crt-flicker {
     from { opacity: 0.95; }
     to { opacity: 1; }
-}
-/* ====== 타이핑 애니메이션 효과 ====== */
-@keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
-}
-
-@keyframes blink {
-    50% { border-color: transparent; }
-}
-
-.typing-container {
-    display: inline-block;
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: 3px solid #00FF00; /* 🔥 깜빡이는 커서 효과 */
-    animation: typing 3s steps(40, end) forwards, blink 0.8s infinite;
-}
-
-.description {
-    font-size: clamp(22px, 2vw, 26px);
-    font-weight: 400;
-    line-height: 1.8;
-    color: #ddd;
-    text-align: left;
-    max-width: 1000px;
-    text-indent: 0;
-    display: block;
-    white-space: nowrap; /* 🔥 줄바꿈 방지 */
-    overflow: hidden; /* 🔥 넘치는 글자 숨김 */
 }
