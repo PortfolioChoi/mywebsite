@@ -90,4 +90,34 @@ button:hover {
     content: "";
     margin-bottom: 15px; /* 🔥 줄바꿈 간격 */
 }
+/* ====== 상단 네비게이션 바 스타일 ====== */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* 🔥 반투명 배경 */
+    padding: 15px 30px;
+    display: flex;
+    justify-content: flex-end; /* 🔥 오른쪽 정렬 */
+    align-items: center;
+    z-index: 1000;
+}
+
+.menu {
+    display: flex;
+    gap: 20px; /* 🔥 메뉴 간격 */
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ff0055; /* 🔥 네온 핑크 효과 */
+}
 
