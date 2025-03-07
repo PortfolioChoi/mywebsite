@@ -73,6 +73,7 @@ h1 {
 }
 
 /* ====== 타이핑 애니메이션 효과 ====== */
+/* ====== 타이핑 애니메이션 효과 (수정됨) ====== */
 @keyframes typing {
     from { width: 0; }
     to { width: 100%; }
@@ -86,8 +87,10 @@ h1 {
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;
-    border-right: 3px solid #00FF00;
+    border-right: 3px solid #00FF00; /* 🔥 깜빡이는 커서 효과 */
     animation: typing 3s steps(40, end) forwards, blink 0.8s infinite;
+    min-width: fit-content; /* 🔥 글자 크기에 맞게 자동 조정 */
+    max-width: 100%; /* 🔥 전체 너비를 초과하지 않도록 설정 */
 }
 
 /* ======= 본문 블록 스타일 (그리드 배치) ======= */
