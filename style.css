@@ -8,3 +8,19 @@ h1 {
     color: #333; /* 글씨 색 어두운 회색 */
     font-size: 36px; /* 글씨 크기 키우기 */
 }
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
