@@ -36,20 +36,20 @@ nav a:hover {
     margin: auto;
     padding: 100px 0;
 }
-
 h1 {
-    font-size: clamp(100px, 15vw, 200px); /* 🔥 최소 100px, 최대 200px 유지 */
+    font-size: 18vw; /* 🔥 화면 너비의 18%를 차지하도록 */
     font-weight: bold;
     text-transform: uppercase;
     text-align: left;
     margin: 0;
     padding: 0;
     line-height: 1;
-    letter-spacing: -3px;
+    letter-spacing: -2px;
     width: 100%;
-    white-space: nowrap;
+    white-space: nowrap; /* 🔥 한 줄로 유지 */
     overflow: hidden;
 }
+
 
 
 p {
