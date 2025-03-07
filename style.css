@@ -38,15 +38,19 @@ nav a:hover {
 }
 
 h1 {
-    font-size: 150px;  /* 🔥 다시 크게 조정 */
-    font-family: 'Space Grotesk', sans-serif; /* 🔥 선택한 폰트 적용 */
+    font-size: 18vw; /* 🔥 화면 너비의 18%를 차지하도록 */
     font-weight: bold;
     text-transform: uppercase;
     text-align: left;
-    margin: 10px 5% 0 5%; /* 🔥 여백 최소화 */
+    margin: 0;
     padding: 0;
-    letter-spacing: -3px; /* 🔥 글자 간격 조정 */
+    line-height: 1;
+    letter-spacing: -2px;
+    width: 100%;
+    white-space: nowrap; /* 🔥 한 줄로 유지 */
+    overflow: hidden;
 }
+
 
 p {
     font-size: 20px;
