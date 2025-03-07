@@ -116,12 +116,15 @@ hr {
 /* ======= 텍스트 블록 스타일 ======= */
 .text-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 🔥 자동 정렬 */
-    gap: 25px; /* 🔥 블록 사이 간격 */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 50px;
+    justify-content: flex-start; /* 🔥 왼쪽 정렬 */
+    text-align: left;
     width: 90%;
     max-width: 1200px;
-    margin: 50px auto;
+    margin-left: 5vw; /* 🔥 왼쪽으로 이동 */
 }
+
 
 .text-block {
     font-size: 22px;
@@ -132,12 +135,12 @@ hr {
     border-radius: 10px;
 }
 .single-line {
-    white-space: nowrap; /* 🔥 한 줄 유지 */
-    overflow: hidden; /* 🔥 넘치는 부분 숨기기 */
-    text-overflow: ellipsis; /* 🔥 너무 길면 '...' 처리 */
-    display: flex; /* 🔥 한 줄 정렬 */
+    overflow: hidden; /* 넘치는 부분 숨기기 */
+    white-space: nowrap; /* 한 줄 유지 */
+    display: flex;
     align-items: center;
-    max-width: 80vw; /* 🔥 한 줄 길이 제한 */
-    margin-left: 30vw; /* 🔥 왼쪽으로 이동 */
-    justify-content: left; /* 🔥 중앙 정렬 */
+    text-align: left;
+    justify-content: flex-start; /* 🔥 왼쪽 정렬 */
+    width: 100%; /* 🔥 전체 너비 사용 */
+    padding-left: 5vw; /* 🔥 왼쪽 여백 추가 */
 }
