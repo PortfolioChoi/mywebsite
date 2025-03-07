@@ -6,6 +6,8 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
+    .container {
+    position: relative; /* 🔥 절대 위치를 기준점으로 설정 */
 }
 
 /* ====== 네비게이션 바 ====== */
@@ -104,13 +106,10 @@ hr {
     color: #ddd;
     text-align: left; /* 🔥 왼쪽 정렬 */
     max-width: 60vw; /* 🔥 본문이 너무 넓어지지 않도록 설정 */
-    text-indent: 0;
-    display: block;
-    white-space: normal;
-    word-break: break-word;
     position: absolute; /* 🔥 강제적으로 위치 지정 */
     left: 5vw; /* 🔥 화면 왼쪽에서 5% 떨어지도록 설정 */
     top: 50vh; /* 🔥 제목 아래 적절한 위치로 조정 */
+    transform: translateY(-50%);
 }
 
 /* ======= 텍스트 블록 스타일 ======= */
