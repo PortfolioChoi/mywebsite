@@ -10,18 +10,20 @@ body {
 
 /* ======= 제목 스타일 (꽉 차게) ======= */
 h1 {
-    font-size: 18vh; /* 🔥 화면 높이의 18% 크기로 조정 */
+    font-size: 18vh;
+    font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
-    font-family: 'Pixelify Sans', sans-serif;
+    color: #00FF00; /* 🔥 초록색 */
     text-transform: uppercase;
     text-align: left;
     width: 100%;
     margin: 0;
-    padding: 20vh 5vw 10vh; /* 🔥 상단 메뉴와 겹치지 않도록 조정 */
+    padding: 20vh 5vw 10vh;
     line-height: 1;
     letter-spacing: -3px;
     white-space: normal;
     word-break: break-word;
+    animation: blink 1.5s infinite alternate;
 }
 
 /* ======= 본문 스타일 (일자로 유지) ======= */
@@ -122,4 +124,8 @@ nav a {
 nav a:hover {
     color: #ff0055; /* 🔥 네온 핑크 효과 */
 }
-
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.7; }
+    100% { opacity: 1; }
+}
