@@ -101,3 +101,21 @@ hr {
     margin: 20px 2%;
     max-width: 900px;
 }
+/* ======= 텍스트 블록 스타일 ======= */
+.text-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 🔥 자동 정렬 */
+    gap: 30px; /* 🔥 블록 사이 간격 */
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.text-block {
+    font-size: 22px;
+    line-height: 1.8;
+    color: #ddd;
+    background: rgba(255, 255, 255, 0.05); /* 🔥 연한 블록 배경 */
+    padding: 20px;
+    border-radius: 10px;
+}
