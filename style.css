@@ -32,7 +32,7 @@ nav a:hover {
 
 /* ====== 메인 컨텐츠 ====== */
 .container {
-    position: relative; /* 🔥 부모 요소를 기준점으로 설정 */
+    position: relative; /* 🔥 내부 요소의 위치 기준 */
     display: block;
     width: 100%;
     margin: 0;
@@ -99,14 +99,13 @@ hr {
 }
 /* ======= 본문 스타일 ======= */
 .description {
-    position: absolute;
-    left: 0; /* 🔥 화면 맨 왼쪽으로 이동 */
-    top: 50vh; /* 🔥 화면 중앙으로 정렬 */
-    transform: translateY(-50%);
-    width: 100%; /* 🔥 전체 너비 사용 */
-    max-width: none; /* 🔥 최대 너비 제한 해제 */
-    margin: 0;
-    padding: 0;
+    position: relative; /* 🔥 absolute 대신 relative 사용 */
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0; /* 🔥 완전히 왼쪽으로 정렬 */
+    padding-left: 0;
+    text-align: left;
 }
 
 /* ======= 텍스트 블록 스타일 ======= */
