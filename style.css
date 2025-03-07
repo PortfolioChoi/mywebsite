@@ -12,9 +12,9 @@ body {
 /* ======= 제목 스타일 (꽉 차게) ======= */
 h1 {
     font-size: 18vh;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Pixelify Sans', sans-serif;
     font-weight: bold;
-    color: #00FF00; /* 🔥 초록색 */
+    color: #00FF00;
     text-transform: uppercase;
     text-align: left;
     width: 100%;
