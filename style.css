@@ -107,11 +107,12 @@ h1 {
 .text-block {
     font-size: 18px;
     line-height: 1.8;
-    color: #ddd;
+    color: #00FF00;
     background: rgba(255, 255, 255, 0);
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 0 5px #00FF00, 0 0 10px #00FF00, 0 0 15px #008000;
 }
 
 /* ======= 버튼 스타일 ======= */
@@ -123,7 +124,7 @@ button {
     color: #ff0055;
     border: 2px solid #ff0055;
     border-radius: 30px;
-    text-decoration: none;
+    text-shadow: 0 0 5px #00FF00, 0 0 10px #00FF00, 0 0 15px #008000;
     font-weight: bold;
     transition: 0.3s;
 }
