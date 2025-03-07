@@ -214,4 +214,26 @@ button:hover {
     text-shadow: 0 0 8px #00FF00, 0 0 12px #00FF00, 0 0 20px #008000;
     animation: glow 1.5s infinite alternate;
 }
+/* ======= ABOUT 페이지 본문 스타일 ======= */
+.description {
+    font-size: clamp(22px, 2vw, 26px);
+    font-weight: 400;
+    line-height: 1.8;
+    color: #00FF00;
+    text-align: left;
+    max-width: 1000px;
+    text-indent: 30px; /* 🔥 들여쓰기 적용 */
+    display: block;
+    white-space: normal;
+    word-break: break-word;
+    margin: 20px auto;
+    text-shadow: 0 0 5px #00FF00, 0 0 10px #00FF00, 0 0 15px #008000;
+}
+
+/* ======= 번역 문장 스타일 ======= */
+.description + .description {
+    margin-top: 10px; /* 🔥 영어 문장과 한글 번역 문장 사이 간격 조정 */
+    font-size: clamp(20px, 1.8vw, 24px); /* 🔥 살짝 크기 조정 */
+    color: #66ff66; /* 🔥 연한 초록색 */
+}
 
