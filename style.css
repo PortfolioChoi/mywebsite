@@ -97,17 +97,20 @@ hr {
 }
 /* ======= 본문 스타일 ======= */
 .description {
-    font-family: 'Pixelify Sans', sans-serif; /* 🔥 선택한 폰트 적용 */
-    font-size: clamp(20px, 2vw, 28px); /* 🔥 화면 크기에 따라 적절한 크기로 유지 */
-    font-weight: 400; /* 🔥 기본 글씨 두께 */
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: clamp(22px, 2vw, 26px);
+    font-weight: 400;
     line-height: 1.8;
     color: #ddd;
-    text-align: left;
+    text-align: left; /* 🔥 왼쪽 정렬 */
     max-width: 1000px;
-    margin-left: 30vw; /* 🔥 왼쪽으로 이동 */
     text-indent: 0;
-    white-space: nowrap;
+    display: block;
+    white-space: normal;
+    word-break: break-word;
+    margin-left: 5vw; /* 🔥 왼쪽으로 이동 */
 }
+
 /* ======= 텍스트 블록 스타일 ======= */
 .text-grid {
     display: grid;
