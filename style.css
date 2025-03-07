@@ -6,8 +6,6 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
-    .container {
-    position: relative; /* 🔥 절대 위치를 기준점으로 설정 */
 }
 
 /* ====== 네비게이션 바 ====== */
@@ -34,6 +32,11 @@ nav a:hover {
 
 /* ====== 메인 컨텐츠 ====== */
 .container {
+    width: 80%;
+    margin: auto;
+    padding: 100px 0;
+    .container {
+    position: relative; /* 🔥 절대 위치를 기준점으로 설정 */
     width: 80%;
     margin: auto;
     padding: 100px 0;
@@ -106,11 +109,11 @@ hr {
     color: #ddd;
     text-align: left; /* 🔥 왼쪽 정렬 */
     max-width: 60vw; /* 🔥 본문이 너무 넓어지지 않도록 설정 */
-    position: absolute; /* 🔥 강제적으로 위치 지정 */
-    left: 5vw; /* 🔥 화면 왼쪽에서 5% 떨어지도록 설정 */
-    top: 50vh; /* 🔥 제목 아래 적절한 위치로 조정 */
-    transform: translateY(-50%);
+    position: static; /* 🔥 위치를 강제적으로 고정 */
+    margin-left: 5vw; /* 🔥 왼쪽으로 이동 */
+    transform: none; /* 🔥 필요 없는 변형 제거 */
 }
+
 
 /* ======= 텍스트 블록 스타일 ======= */
 .text-grid {
@@ -134,12 +137,11 @@ hr {
     border-radius: 10px;
 }
 .single-line {
-    overflow: hidden; /* 넘치는 부분 숨기기 */
-    white-space: nowrap; /* 한 줄 유지 */
-    display: flex;
-    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+    display: block; /* 🔥 flex 제거하고 block 사용 */
     text-align: left;
-    justify-content: flex-start; /* 🔥 왼쪽 정렬 */
-    width: 100%; /* 🔥 전체 너비 사용 */
-    padding-left: 5vw; /* 🔥 왼쪽 여백 추가 */
+    width: 100%;
+    margin-left: 5vw; /* 🔥 왼쪽 정렬 */
 }
+
