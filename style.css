@@ -92,3 +92,12 @@ hr {
     width: 80%;
     margin: 50px auto;
 }
+/* ======= 본문 스타일 ======= */
+.description {
+    font-size: 22px;
+    line-height: 1.8;
+    color: #ddd;
+    text-align: left;
+    margin: 20px 2%;
+    max-width: 900px;
+}
