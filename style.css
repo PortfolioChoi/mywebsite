@@ -103,12 +103,14 @@ hr {
     line-height: 1.8;
     color: #ddd;
     text-align: left; /* 🔥 왼쪽 정렬 */
-    max-width: 1000px;
+    max-width: 60vw; /* 🔥 본문이 너무 넓어지지 않도록 설정 */
     text-indent: 0;
     display: block;
     white-space: normal;
     word-break: break-word;
-    margin-left: 5vw; /* 🔥 왼쪽으로 이동 */
+    position: absolute; /* 🔥 강제적으로 위치 지정 */
+    left: 5vw; /* 🔥 화면 왼쪽에서 5% 떨어지도록 설정 */
+    top: 50vh; /* 🔥 제목 아래 적절한 위치로 조정 */
 }
 
 /* ======= 텍스트 블록 스타일 ======= */
