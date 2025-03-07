@@ -103,7 +103,7 @@ hr {
     position: relative;
     width: auto;
     max-width: 800px; /* 🔥 본문의 최대 너비 설정 */
-    margin-left: 0; /* 🔥 왼쪽으로 이동 */
+    margin-left: 0; /* 🔥 강제로 왼쪽 정렬 */
     padding-left: 0;
     text-align: left;
 }
