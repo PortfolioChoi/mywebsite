@@ -1,8 +1,8 @@
 /* ======= 기본 스타일 (전체 테마) ======= */
 body {
-    background-color: #000;
-    color: #fff;
-    font-family: 'Pixelify Sans', sans-serif;
+    background-color: #000; /* 🔥 배경을 검은색으로 설정 */
+    color: #00FF00; /* 🔥 텍스트를 초록색으로 변경 */
+    font-family: 'Courier New', Courier, monospace; /* 🔥 코딩 스타일 폰트 */
     text-align: left;
     margin: 0;
     padding: 0;
