@@ -105,6 +105,7 @@ hr {
     text-align: left;
     max-width: 1000px;
     margin-bottom: 15px; /* 🔥 문단 간격 조정 */
+    text-indent: 0;
 }
 /* ======= 텍스트 블록 스타일 ======= */
 .text-grid {
