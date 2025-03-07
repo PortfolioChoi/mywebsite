@@ -133,6 +133,6 @@ hr {
     display: flex; /* 🔥 한 줄 정렬 */
     align-items: center;
     max-width: 80vw; /* 🔥 한 줄 길이 제한 */
-    margin: 0 auto; /* 🔥 가운데 정렬 */
+    margin-left: 5vw; /* 🔥 왼쪽으로 이동 */
     justify-content: center; /* 🔥 중앙 정렬 */
 }
