@@ -43,7 +43,7 @@ nav a:hover {
 
 /* ======= 제목 스타일 (타이핑 효과 + 네온) ======= */
 h1 {
-    font-size: 18vh;
+    font-size: 35vh;
     font-family: 'Pixelify Sans', sans-serif;
     font-weight: bold;
     color: #00FF00;
@@ -67,34 +67,13 @@ h1 {
     color: #00FF00;
     text-align: left;
     max-width: 90vw; /* 🔥 화면에 꽉 차게 */
-    text-indent: 30px; /* 🔥 들여쓰기 */
+    text-indent: 20px; /* 🔥 들여쓰기 */
     display: block;
     white-space: normal;
     word-break: break-word;
     margin: 15vh auto; /* 🔥 제목과의 간격 조정 */
-    padding: 0 5vw; /* 🔥 좌우 여백 */
+    padding: 0 2vw; /* 🔥 좌우 여백 */
     text-shadow: 0 0 5px #00FF00, 0 0 10px #00FF00, 0 0 15px #008000;
-}
-
-/* ====== 타이핑 애니메이션 효과 (수정됨) ====== */
-@keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
-}
-
-@keyframes blink {
-    50% { border-color: transparent; }
-}
-
-.typing-container {
-    display: inline-block;
-    overflow: hidden;
-    white-space: normal;  /* 🔥 자동 줄바꿈 허용 */
-    word-break: break-word;  /* 🔥 긴 단어도 줄바꿈 */
-    border-right: 3px solid #00FF00; /* 🔥 깜빡이는 커서 효과 */
-    animation: typing 5s steps(200, end) forwards, blink 0.8s infinite;
-    min-width: fit-content;  /* 🔥 글자 크기에 맞게 자동 조정 */
-    max-width: 80vw; /* 🔥 부모 요소에서 잘리지 않도록 수정 */
 }
 
 /* ======= 본문 블록 스타일 (그리드 배치) ======= */
@@ -149,11 +128,11 @@ body::after {
     background: rgba(0, 255, 0, 0.05);
     pointer-events: none;
     z-index: 9999;
-    animation: crt-flicker 0.2s infinite alternate;
+    animation: crt-flicker 0.3s infinite alternate;
 }
 
 @keyframes crt-flicker {
-    from { opacity: 0.95; }
+    from { opacity: 0.9; }
     to { opacity: 1; }
 }
 
