@@ -10,9 +10,9 @@ body {
 
 /* ====== 네비게이션 바 ====== */
 nav {
-    padding: 10px 0;
+   background-color: #111; /* 💡 네비게이션 바 배경을 블랙 (#111) */
+    padding: 15px;
     text-align: right;
-    margin-right: 20px;
 }
 
 nav a {
