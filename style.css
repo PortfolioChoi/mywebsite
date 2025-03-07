@@ -38,12 +38,13 @@ nav a:hover {
 }
 
 h1 {
-    font-size: 120px;  /* 🔥 더 크게! */
+    font-size: 120px;  /* 크기는 유지 */
     font-weight: bold;
     text-transform: uppercase;
     text-align: left;
-    margin: 50px 5%;  /* 🔥 좌우 여백 최소화 */
-    letter-spacing: -2px; /* 🔥 글자 간격 좁히기 */
+    margin: 0 5%; /* 🔥 위쪽 여백 없애기 */
+    padding-top: 50px; /* 🔥 상단 여백 조절 */
+    letter-spacing: -2px; /* 글자 간격 조정 */
 }
 
 p {
