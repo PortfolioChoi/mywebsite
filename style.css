@@ -107,13 +107,13 @@ hr {
     font-weight: 400;
     line-height: 1.8;
     color: #ddd;
-    text-align: left; /* 🔥 왼쪽 정렬 */
-    max-width: 60vw; /* 🔥 본문이 너무 넓어지지 않도록 설정 */
-    position: static; /* 🔥 위치를 강제적으로 고정 */
-    margin-left: 5vw; /* 🔥 왼쪽으로 이동 */
-    transform: none; /* 🔥 필요 없는 변형 제거 */
+    text-align: left;
+    width: 100vw; /* 🔥 전체 화면 너비 사용 */
+    max-width: none; /* 🔥 최대 너비 제한 해제 */
+    position: static;
+    margin: 0;
+    padding: 0;
 }
-
 
 /* ======= 텍스트 블록 스타일 ======= */
 .text-grid {
