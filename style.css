@@ -162,4 +162,42 @@ body::after {
         text-shadow: 0 0 10px #00FF00, 0 0 20px #00FF00, 0 0 30px #008000;
     }
 }
+/* ======= ABOUT 페이지 스타일 ======= */
+h1 {
+    font-size: 14vh; /* 🔥 크기 조정 */
+    font-family: 'Pixelify Sans', sans-serif;
+    font-weight: bold;
+    color: #00FF00;
+    text-transform: uppercase;
+    text-align: left;
+    margin: 0;
+    padding: 15vh 5vw 5vh;
+    text-shadow: 0 0 8px #00FF00, 0 0 12px #00FF00, 0 0 20px #008000;
+    animation: glow 1.5s infinite alternate;
+}
+
+.text-block {
+    background: rgba(0, 255, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00FF00;
+}
+
+button {
+    font-size: 18px;
+    padding: 12px 25px;
+    background: transparent;
+    color: #ff0055;
+    border: 2px solid #ff0055;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 0 0 5px #ff0055, 0 0 10px #ff0055, 0 0 20px #800000;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ff0055;
+    color: #000;
+}
 
