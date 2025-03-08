@@ -721,43 +721,42 @@ h1 {
     text-indent: 30px; /* 🔥 문단 들여쓰기 적용 */
     text-shadow: 0 0 5px #00FF00, 0 0 10px #00FF00, 0 0 15px #008000;
 }
-/* ======= 인터랙션 디자인 페이지 스타일 (네온 효과 제거) ======= */
+/* ======= 인터랙션 디자인 페이지 스타일 (화이트 텍스트 & 더 작은 크기) ======= */
 .interaction-title {
-    font-size: 5vh;
+    font-size: 4vh; /* 🔥 기존 5vh → 4vh로 축소 */
     font-weight: bold;
-    color: #00FF00;
+    color: #FFF; /* 🔥 텍스트 색상을 흰색으로 변경 */
     text-align: left;
     margin: 8vh 10vw 4vh;
     text-shadow: none; /* 🔥 네온 효과 제거 */
 }
 
 .interaction-subtitle {
-    font-size: 2.5vh;
+    font-size: 2vh; /* 🔥 기존 2.5vh → 2vh로 축소 */
     font-weight: bold;
-    color: #00FF00;
+    color: #FFF;
     text-align: left;
     margin: 1vh 10vw;
-    text-shadow: none; /* 🔥 네온 효과 제거 */
+    text-shadow: none;
 }
 
 .interaction-heading {
-    font-size: 3.5vh;
+    font-size: 3vh; /* 🔥 기존 3.5vh → 3vh로 축소 */
     font-weight: bold;
-    color: #00FF00;
+    color: #FFF;
     text-align: left;
     margin: 5vh 10vw 2vh;
-    text-shadow: none; /* 🔥 네온 효과 제거 */
+    text-shadow: none;
 }
 
 .interaction-text {
-    font-size: clamp(18px, 1.5vw, 22px);
+    font-size: clamp(16px, 1.2vw, 20px); /* 🔥 기존보다 더 작게 조정 */
     font-weight: 400;
-    line-height: 1.8; /* 🔥 가독성을 위해 줄 간격 넓힘 */
-    color: #00FF00;
+    line-height: 1.8;
+    color: #FFF; /* 🔥 텍스트 색상을 흰색으로 변경 */
     text-align: left;
     max-width: 70vw;
-    margin: 0 auto 5vh 10vw; /* 🔥 아래 여백 추가 (기존 3vh → 5vh) */
+    margin: 0 auto 6vh 10vw; /* 🔥 아래 여백 6vh로 추가 */
     text-indent: 20px;
-    text-shadow: none; /* 🔥 네온 효과 제거 */
+    text-shadow: none;
 }
-
