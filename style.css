@@ -682,3 +682,42 @@ h1 {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+/* ======= 인터랙션 디자인 페이지 스타일 ======= */
+.interaction-title {
+    font-size: 8vh; /* 🔥 메인 페이지 제목보다 작게 조정 */
+    font-weight: bold;
+    color: #00FF00;
+    text-align: left;
+    margin: 10vh 10vw 5vh;
+    text-shadow: 0 0 5px #00FF00, 0 0 10px #00FF00, 0 0 15px #008000;
+}
+
+.interaction-subtitle {
+    font-size: 3vh; /* 🔥 부제목 크기 조정 */
+    font-weight: bold;
+    color: #00FF00;
+    text-align: left;
+    margin: 2vh 10vw;
+    text-shadow: 0 0 5px #00FF00, 0 0 10px #00FF00, 0 0 15px #008000;
+}
+
+.interaction-heading {
+    font-size: 5vh; /* 🔥 본문 소제목 크기 조정 */
+    font-weight: bold;
+    color: #00FF00;
+    text-align: left;
+    margin: 8vh 10vw 3vh;
+    text-shadow: 0 0 5px #00FF00, 0 0 10px #00FF00, 0 0 15px #008000;
+}
+
+.interaction-text {
+    font-size: clamp(22px, 2vw, 26px); /* 🔥 본문 크기 조정 */
+    font-weight: 400;
+    line-height: 1.8;
+    color: #00FF00;
+    text-align: left;
+    max-width: 70vw; /* 🔥 가독성을 위해 폭을 줄임 */
+    margin: 0 auto 3vh 10vw; /* 🔥 왼쪽 정렬 + 마진 추가 */
+    text-indent: 30px; /* 🔥 문단 들여쓰기 적용 */
+    text-shadow: 0 0 5px #00FF00, 0 0 10px #00FF00, 0 0 15px #008000;
+}
