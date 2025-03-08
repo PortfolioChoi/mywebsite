@@ -205,3 +205,96 @@ h1 {
     font-style: italic;
     margin-bottom: 5vh;
 }
+/* ======= 드롭다운 스타일 ======= */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #111;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    display: block;
+    transition: 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #ff0055;
+    color: #000;
+}
+
+/* ======= 호버 시 드롭다운 보이기 ======= */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* ======= 본문 스타일 ======= */
+.description {
+    font-size: clamp(24px, 2.5vw, 28px);
+    font-weight: 400;
+    line-height: 1.8;
+    color: #00FF00;
+    text-align: left;
+    max-width: 90vw;
+    text-indent: 30px;
+    display: block;
+    white-space: normal;
+    word-break: break-word;
+    margin: 15vh auto;
+    padding: 0 5vw;
+    text-shadow: 0 0 5px #00FF00, 0 0 10px #00FF00, 0 0 15px #008000;
+}
+
+/* ======= 추가 정보 컨테이너 ======= */
+.extra-info-container {
+    margin: 50px auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ======= 3단 컬럼 스타일 ======= */
+.info-section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.column {
+    width: 30%;
+    text-align: left;
+}
+
+.column h4 {
+    font-size: 20px;
+    color: #00FF00;
+    margin-bottom: 10px;
+}
+
+.column p {
+    font-size: 16px;
+    color: #66ff66;
+}
+
+/* ======= 추가 설명 텍스트 ======= */
+.extra-text {
+    margin-top: 30px;
+    text-align: center;
+    max-width: 800px;
+}
+
+.extra-text p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #ddd;
+}
