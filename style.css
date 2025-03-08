@@ -1,5 +1,5 @@
 /* ======= 기본 스타일 (블랙 테마) ======= */
-body {
+body.main-page {
     background-color: #000;
     color: #00FF00;
     font-family: 'Courier New', Courier, monospace;
@@ -453,10 +453,10 @@ h1 {
 .extra-info-container {
     display: flex;
     flex-direction: column;
-    gap: 40px; /* 🔥 섹션 간 간격 */
-    width: 90vw;
-    max-width: 1400px;
-    margin: 10vh auto;
+    gap: 50px; /* 🔥 섹션 간 간격 */
+    width: 100vw;
+    max-width: 1500px;
+    margin: 6vh auto;
     text-align: left;
 }
 
