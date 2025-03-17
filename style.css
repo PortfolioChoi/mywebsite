@@ -766,10 +766,11 @@ h1 {
     display: flex;
     flex-direction: column; /* 세로로 정렬 */
     align-items: center; /* 가운데 정렬 */
+    justify-content: center; /* 중앙 정렬 */
     gap: 20px; /* 이미지 간격 */
     margin: 50px auto;
-    width: 90vw; /* 전체 너비 */
-    max-width: 1200px;
+    width: 100vw; /* 전체 너비 */
+    max-width: 1200px; /* 최대 너비 제한 */
 }
 
 /* 🔥 이미지 크기 조정 */
@@ -778,4 +779,6 @@ h1 {
     max-width: 1000px; /* 최대 너비 제한 */
     height: auto; /* 비율 유지 */
     border-radius: 10px; /* 모서리 둥글게 */
+    display: block;
+    margin: 0 auto; /* 화면 중앙 정렬 */
 }
