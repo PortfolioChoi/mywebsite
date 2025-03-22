@@ -782,3 +782,14 @@ h1 {
     display: block;
     margin: 0 auto; /* 화면 중앙 정렬 */
 }
+
+.image-container {
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+}
+
+.image-container img {
+    max-width: 90%;
+    height: auto;
+}
