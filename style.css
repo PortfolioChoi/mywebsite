@@ -802,4 +802,13 @@ h1 {
     max-width: 90%;
     height: auto;
 }
+.image-container {
+    text-align: center;
+    margin: 5vh auto 10vh;
+}
+
+.image-container img {
+    max-width: 90%;
+    height: auto;
+}
 
